@@ -11,7 +11,7 @@ class library():
         # self.b=b
     def display_index(self):
        print("welcome to my library\n1.display book\n2.lend a book\n3.add a book\n4.Return a book")
-        
+
     def lead(self):
         a=1
         for i in self.a:
@@ -23,26 +23,26 @@ class library():
             print(f"{a} {i}")
             a+=1
     def add_book(self):
-        
+
         # print(f"{self.a}")
         a=1
         for i in self.a:
             print(f"{a} {i}")
             a+=1
 
-        
+
     def _return_book(self):
         a=1
         for i in self.a:
             print(f"{a} {i}")
             a+=1
-        
-        
-        
-        
-                
-        
-        
+
+
+
+
+
+
+
 human=library(a)
 # human2=library(user__input)
 
@@ -67,16 +67,16 @@ while True:
             if _user_input not in abc:
                 break
 
-    
-        
+
+
 
 
     _user_input=int(_user_input)
     # if _user_input in int:
     #     _user_input=int(_user_input)
 
-    
-         
+
+
     if _user_input ==1:
         human._display_book()
         _user_sec=input("c for Back and q for Qict")
@@ -90,15 +90,15 @@ while True:
                 _user_sec=input("c or q")
                 if _user_sec =="c" or _user_sec=="q":
                     break
-                
+
         if _user_sec=="c":
             human.display_index()
         elif _user_sec=="q":
-        
+
             break
-        
-            
-        
+
+
+
 
     elif _user_input==2:
         human.lead()
@@ -109,7 +109,7 @@ while True:
                 _user_buy=input("Enter book name")
                 if _user_buy!="":
                     break
-        
+
 
         if _user_buy =="c":
             human.display_index()
@@ -165,9 +165,9 @@ while True:
         # elif _user_buy=="c":
         #     human.display_index()
             # user_secc=input("c for continue and q for qict")
-            
-        
-        
+
+
+
     elif _user_input==3: 
         print("Enter the name of the book to add to the library")
         print("c for Back")
@@ -196,21 +196,21 @@ while True:
                 human.display_index()
             elif user_secc=="q":
                 break
-        
-        
-                        
-        
-        
-        
-                    
-         
-         
-         
+
+
+
+
+
+
+
+
+
+
     elif _user_input==4:
         print("c for Back and q for Qict")
         _user_return_book=input("Enter the book name u want to return \n")
         # human2=library(_user_return_book)
-        
+
         if _user_return_book =="":
             while True:
                 _user_return_book=input("Enter the book name u want to return \n")
@@ -223,8 +223,8 @@ while True:
 
         #    
 
-        
-                      
+
+
         elif _user_return_book in a1 and _user_return_book not in a:
             if _user_return_book=="c" or _user_return_book=="q":
                 break
@@ -243,14 +243,14 @@ while True:
                     user_secc=input("c or q")
                     if user_secc =="c" or user_secc=="q":
                         break
-                    
+
             if user_secc=="c":
                 human.display_index()
             elif user_secc=="q":
                 break
                 human._return_book()
 
-            
+
         else:
             print("Return book name is not in our library list")
             user_secc=input("c for Back and q for Qict")
@@ -264,15 +264,15 @@ while True:
                     user_secc=input("c or q")
                     if user_secc =="c" or user_secc=="q":
                         break
-                    
+
             if user_secc=="c":
                 human.display_index()
             elif user_secc=="q":
                 break
 
-        
 
-    
+
+
 
 
 
@@ -297,8 +297,4 @@ while True:
     #        human.display_index()
     #     elif (_user_input ==2):
     #        human._display_book()
-
-
-
-    
 
